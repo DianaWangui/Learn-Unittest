@@ -9,5 +9,5 @@ def mul(a, b):
 
 def div(a, b):
   if b == 0:
-    raise("Not divisible by 0")
+    raise ValueError("Not divisible by 0")
   return a / b
