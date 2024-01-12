@@ -22,8 +22,13 @@ class TestCalc(unittest.TestCase):
     self.assertEqual(calc.mul(0, 1), 0)
 
   def test_div(self):
-    self.assertEqual(calc.div(3, 5), 15)
-    self.assertEqual(calc.div(-1, 5), -5)
-    self.assertEqual(calc.div(-3, -3), 6)
-    self.assertEqual(calc.div(0, 1), 0)
+    self.assertEqual(calc.div(2, 2), 1)
+    self.assertEqual(calc.div(-1, -1), 1)
+    self.assertEqual(calc.div(-3, 3), -1)
+    self.assertEqual(calc.div(5, 2), 2.5)
     
+    with self.assertRaises(ValueError):
+      calc.div(10, 0)
+    
+if __name__ == '__main__':
+  unittest.main()
