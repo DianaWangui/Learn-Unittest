@@ -2,6 +2,15 @@ import unittest
 from employee import Employee
 
 class TestEmployee(unittest.TestCase):
+  @classmethod
+  def setUpClass(cls):
+    print("setupClass prints executes test are done")
+
+  @classmethod
+  def tearDownClass(cls):
+    print("teardownClass executes after test are done")
+
+
   # This method is created before every time before running the test
   def setUp(self):
     self.employee_1 = Employee("Diana", "Wangui", 300000)
