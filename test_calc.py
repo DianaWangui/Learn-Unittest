@@ -27,7 +27,7 @@ class TestCalc(unittest.TestCase):
     self.assertEqual(calc.div(-3, 3), -1)
     self.assertEqual(calc.div(5, 2), 2.5)
 
-    # handle using contact manager
+    # handle using contact manager to test exception error
     with self.assertRaises(ValueError):
       calc.div(10, 0)
     
