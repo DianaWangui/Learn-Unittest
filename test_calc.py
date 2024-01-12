@@ -16,9 +16,14 @@ class TestCalc(unittest.TestCase):
 
 
   def test_mul(self):
-    self.assertEqual(calc.mul(3, 5), 8)
-    self.assertEqual(calc.mul(-1, 5), 4)
-    self.assertEqual(calc.mul(-3, -3), -6)
-    self.assertEqual(calc.mul(-1, 1), 0)
+    self.assertEqual(calc.mul(3, 5), 15)
+    self.assertEqual(calc.mul(-1, 5), -5)
+    self.assertEqual(calc.mul(-3, -3), 6)
+    self.assertEqual(calc.mul(0, 1), 0)
 
+  def test_mul(self):
+    self.assertEqual(calc.mul(3, 5), 15)
+    self.assertEqual(calc.mul(-1, 5), -5)
+    self.assertEqual(calc.mul(-3, -3), 6)
+    self.assertEqual(calc.mul(0, 1), 0)
     
